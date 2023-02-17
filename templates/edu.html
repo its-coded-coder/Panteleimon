@@ -1,0 +1,169 @@
+{% load static %}
+<!DOCTYPE html>
+<html> 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="title icon" type="image/png" href="{% static 'images/favicon.png' %}">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+<!-- vendor css -->
+    <link href="{% static '../assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static '../assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static '../assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static '../assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static '../assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static '../assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static '../assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="logo"><a href="/">ST. PANTELEIMON COMMUNITY <br> BASED ORGANISATION</a></h1>
+     
+        <nav>
+          <div id="menu-icon"></div>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#nature">Talent Nurturing</a></li>
+            <li><a href="#football">Football</a></li>
+            <li><a href="#academy">Academy</a></li>
+            <li><a href="#compassion">Compassion</a></li>
+            <li><a href="#graduation">graduation</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- End Header -->
+      <hr>
+      <section>
+        <a name="nature"></a>
+        <h2>St Panteleimon Talent Nurturing</h2>
+        <div class="container">
+          <a href="{% static './images/4.jpg' %}"><img src="{% static './images/4.jpg' %}" alt="image1"></a>
+          <video src="{% static './images/03.mp4' %}" autoplay controls></video>
+        </div>
+      </section>
+      <section>
+          <a name="football"></a>
+          <h2>St Panteleimon Football Academy</h2>
+          <div class="container">
+              <a href="{% static 'images/1.jpg' %}"><img src="{% static 'images/6.jpg' %}"></a>
+               </div>
+      </section>
+      <section>
+          <a name="academy"></a>
+          <h2>St Panteleimon Academy</h2>
+          <div class="container">
+            <a href="{% static 'images/2.jpg' %}"><img src="{% static 'images/2.jpg' %}"></a>
+            <a href="{% static 'images/1.jpg' %}"><img src="{% static 'images/1.jpg' %}"></a>
+            <a href="{% static 'images/3.jpg' %}"><img src="{% static 'images/3.jpg' %}"></a>
+          </div>
+      </section>
+
+      <section>
+        <a name="compassion"></a>
+        <h2>St Panteleimon Compassion</h2>
+        <p>St Panteleimon Compassionate hands to a disabled widow and parishioners at St John the Baptist</p>
+        <div class="container">
+          <a href="{% static 'images/5.jpg' %}"><img src="{% static 'images/5.jpg' %}"></a>
+          <video src="{% static 'images/02.mp4' %}" autoplay controls></video>
+        </div>
+    </section>
+
+    <section>
+      <a name="graduation"></a>
+      <h2 class="more">St Panteleimon 2022 Graduation</h2>
+      <div class="container">
+        <a href="{% static 'images/12.jpg' %}"><img src="{% static 'images/12.jpg' %}"></a>
+        <a href="{% static 'images/11.jpg' %}"><img src="{% static 'images/11.jpg' %}"></a>
+        <a href="{% static 'images/10.jpg' %}"><img src="{% static 'images/10.jpg' %}"></a>
+        <video src="{% static 'images/01.mp4' %}" autoplay controls></video>
+      </div>
+  </section>
+
+      <div class="gotop">
+        <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    </div>
+      <footer class="footer">
+        <p>
+          Panteleimon
+        </p>
+      </footer>
+    </div>
+    <script>
+      // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 4 || document.documentElement.scrollTop > 4) {
+            document.getElementById("topBtn").style.display = "block";
+        } else {
+            document.getElementById("topBtn").style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function goToTop() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
