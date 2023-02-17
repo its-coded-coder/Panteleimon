@@ -1,0 +1,207 @@
+:any-link{
+    font-style: normal;
+    text-decoration: none;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    background: linear-gradient(#ffff, rgb(54, 54, 173));
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #38401D;
+    display: flex;
+}
+
+.wrapper {
+    width: 90%;
+    margin: auto;
+    max-width: 1200px;
+}
+
+/* HEADER SECTION */
+
+.header {
+    overflow: hidden;
+}
+
+header h1 {
+    /* float: left; */
+    font-size: 160%; 
+    display: inline-block;     
+}
+
+/* END HEADER SECTION */
+
+/* NAVIGATION */
+
+nav {
+    float: right;
+}
+
+nav ul li {
+    list-style: none;
+    float: left;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 130%;
+    font-weight: 600;
+    color: #1a5e90;  
+}
+
+nav ul li a:hover {
+    color: #063946;
+}
+
+/* END NAVIGATION */
+
+/* SECTIONS */
+section:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+section div.container video{
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    opacity: 1;
+    transition: opacity .5s; 
+}
+section div.container img {
+    width: 33.33%;
+    float: left;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    opacity: 1;
+    transition: opacity .5s;
+}
+
+section div.container img:hover {
+   opacity: 0.65; 
+}
+
+section {
+    margin-bottom: 3%;
+}
+
+section h2 {
+    text-align: center;
+}
+
+/* END OF SECTIONS */
+
+/* FOOTER SECTION */
+.footer {
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.footer p {
+    font-weight: 700;
+}
+p{
+    justify-self: center;
+}
+/* END FOOTER SECTION */
+
+/* MEDIA QUERIES/RESPONSIVE */
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        width: 100%;
+    }
+    
+    header h1 {
+        margin-left: 3%;
+    }
+    #menu-icon {
+        width: 30px;
+        height: 26px;
+        background: url(images/menu.png) no-repeat center;
+        position: absolute;
+        top: 2%;
+        right: 5%;
+        z-index: 100;
+    }
+    nav ul {
+        display: none;
+        position: absolute;
+        right: 5%;
+        top: 0%;
+        padding: 3% 7%;
+        background: #6fcecea8;
+        width: 200px;
+        text-align: center;
+        z-index: 10;
+        border-radius: 10px;
+    }
+    nav ul li {
+        width: 90%;
+        padding: 5%;
+        margin: auto;
+    }
+    nav ul li a {
+        padding: 5% 20%;
+    }
+    nav ul li a:hover {
+        border-bottom: 1px solid #aaa;
+    }
+
+    nav:hover ul {
+        display: block;
+    }
+    section div.container img {
+        display: block;
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+    section div.container video {
+        display: block;
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 768px) and
+(max-width: 1024px) {
+    .wrapper {
+        width: 100%;
+    }
+    header h1 {
+        margin-left: 3%; 
+    }
+    nav {
+        margin-right: 3%;
+    }
+}
+
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+.gotop{
+    position: sticky;
+    bottom: 2%;
+    top: 70px;
+    display: flex;
+    justify-content: right;
+    margin: 10px;
+}
+.bi{
+    width: 100%;
+}
+.bi-arrow-up-short{
+    font-size: 40px;
+    color: #ffff;
+    background-color: rgb(58, 58, 187);
+    border-radius: 10px;
+}
